@@ -1,0 +1,24 @@
+### Register a Student ###
+POST http://localhost:8080/students
+Content-Type: application/json
+
+{
+  "name": "강건",
+  "email": "test@example.com",
+  "score": 90,
+  "comment": "Test comment"
+}
+
+### Get Student Information ###
+GET http://localhost:8080/students/1
+
+### Update Student Information ###
+PUT http://localhost:8080/students/1
+Content-Type: application/json
+
+{
+  "name": "강건",
+  "email": "updated@example.com",
+  "score": 95,
+  "comment": "Comment updated"
+}
