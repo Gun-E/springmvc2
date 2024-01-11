@@ -32,24 +32,15 @@ public class StudentRestController {
 
     @GetMapping("/students/{studentId}")
     public Student getStudent(@PathVariable long studentId) {
+        if (!studentRepository.exists(studentId)) {
+            throw new StudentNotFoundException();}
         Student student = studentRepository.getStudent(studentId);
-        if (student == null) {
-            throw new StudentNotFoundException();
-        }
-        return student;
-    }
-
+        return student;}
     @PutMapping("/students/{studentId}")
+    @ResponseStatus(HttpStatus.CREATED)
     public Student updateStudent(@PathVariable long studentId, @Valid @RequestBody Student updatedStudent, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
-            throw new ValidationFailedException(bindingResult);
-        }
-
+            throw new ValidationFailedException(bindingResult);}
         if (!studentRepository.exists(studentId)) {
-            throw new StudentNotFoundException();
-        }
-        return studentRepository.modify(studentId, updatedStudent.getName(), updatedStudent.getEmail(),
-                updatedStudent.getScore(), updatedStudent.getComment());
-    }
-}
-
+            throw new StudentNotFoundException();}
+        return studentRepository.modify(studentId, updatedStudent.getName(), updatedStudent.getEmail(), updatedStudent.getScore(), updatedStudent.getComment());}}

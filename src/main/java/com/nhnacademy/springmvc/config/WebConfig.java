@@ -84,7 +84,8 @@ public class WebConfig implements WebMvcConfigurer, ApplicationContextAware, Mes
         configurer.favorParameter(true)
                 .parameterName("format")
                 .ignoreAcceptHeader(true)
-                .defaultContentType(MediaType.APPLICATION_XML)
+                .defaultContentType(MediaType.APPLICATION_JSON)
+                .mediaType("json",MediaType.APPLICATION_JSON)
                 .mediaType("xml", MediaType.APPLICATION_XML);
     }
 }

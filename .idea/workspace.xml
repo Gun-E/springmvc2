@@ -9,11 +9,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="05454e24-ed37-4d2c-a1ce-8daaa0f8b9ed" name="변경" comment="feat : 파일 변경" />
+    <list default="true" id="05454e24-ed37-4d2c-a1ce-8daaa0f8b9ed" name="변경" comment="feat : 파일 추가">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/nhnacademy/springmvc/controller/StudentRestControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springmvc/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springmvc/config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springmvc/controller/StudentRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springmvc/controller/StudentRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springmvc/controller/WebControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springmvc/controller/WebControllerAdvice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/students.http" beforeDir="false" afterPath="$PROJECT_DIR$/students.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/StudentRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/StudentRestController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/WebControllerAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/WebControllerAdvice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/config/WebConfig.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageOptionsProvider">
+    <option name="myAddOrReplace" value="1" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -23,6 +40,7 @@
         <option value="HTML File" />
         <option value="Class" />
         <option value="HTTP Request" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -57,6 +75,8 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "last_opened_file_path": "/Users/kang-geon/Desktop/springmvc2/src/main/java/com/nhnacademy/springmvc/repository",
     "node.js.detected.package.eslint": "true",
@@ -89,6 +109,12 @@
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/thymeleaf" />
       <recent name="$PROJECT_DIR$/src/main/webapp" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.nhnacademy.springmvc.controller" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.nhnacademy.springmvc.exception" />
       <recent name="com.nhnacademy.springmvc.domain" />
@@ -96,21 +122,77 @@
       <recent name="com.nhnacademy.springmvc.model" />
     </key>
   </component>
-  <component name="RunManager" selected="Tomcat 서버.Tomcat 9.0.832">
-    <configuration name="students | Get Student Information ######" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/students.http" index="2" requestIdentifier="Get Student Information ######" runType="단일 요청 실행">
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.StudentRestControllerTest.updateStudent">
+    <configuration name="StudentRestControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springmvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhnacademy.springmvc.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhnacademy.springmvc.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.nhnacademy.springmvc.controller.StudentRestControllerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="students | Register a Student ######" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/students.http" requestIdentifier="Register a Student ######" runType="단일 요청 실행">
-      <method v="2" />
+    <configuration name="StudentRestControllerTest.registerStudentValidationFailedException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springmvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhnacademy.springmvc.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhnacademy.springmvc.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.nhnacademy.springmvc.controller.StudentRestControllerTest" />
+      <option name="METHOD_NAME" value="registerStudentValidationFailedException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="students | Update Student Information ######" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/students.http" index="3" requestIdentifier="Update Student Information ######" runType="단일 요청 실행">
-      <method v="2" />
+    <configuration name="StudentRestControllerTest.updateStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springmvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhnacademy.springmvc.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhnacademy.springmvc.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.nhnacademy.springmvc.controller.StudentRestControllerTest" />
+      <option name="METHOD_NAME" value="updateStudent" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="students | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/students.http" requestIdentifier="#1" runType="단일 요청 실행">
-      <method v="2" />
+    <configuration name="StudentRestControllerTest.updateStudentValidationFailedException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springmvc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nhnacademy.springmvc.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.nhnacademy.springmvc.controller" />
+      <option name="MAIN_CLASS_NAME" value="com.nhnacademy.springmvc.controller.StudentRestControllerTest" />
+      <option name="METHOD_NAME" value="updateStudentValidationFailedException" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="students 내 전체" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" path="$PROJECT_DIR$/students.http">
-      <method v="2" />
+    <configuration name="springmvc의 controller" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="springmvc" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java/com/nhnacademy/springmvc/controller" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="springmvc2" />
@@ -125,7 +207,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Tomcat 9.0.832" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.832" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+    <configuration name="Tomcat 9.0.832" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.832" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="11" nameIsGenerated="true">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
@@ -214,13 +296,21 @@
         </option>
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.StudentRestControllerTest" />
+      <item itemvalue="JUnit.StudentRestControllerTest.registerStudentValidationFailedException" />
+      <item itemvalue="JUnit.StudentRestControllerTest.updateStudent" />
+      <item itemvalue="JUnit.StudentRestControllerTest.updateStudentValidationFailedException" />
+      <item itemvalue="JUnit.springmvc의 controller" />
+      <item itemvalue="Tomcat 서버.Tomcat 9.0.832" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP 요청.students | Update Student Information ######" />
-        <item itemvalue="HTTP 요청.students | Get Student Information ######" />
-        <item itemvalue="HTTP 요청.students | Register a Student ######" />
-        <item itemvalue="HTTP 요청.students 내 전체" />
-        <item itemvalue="HTTP 요청.students | #1" />
+        <item itemvalue="JUnit.StudentRestControllerTest.updateStudent" />
+        <item itemvalue="JUnit.springmvc의 controller" />
+        <item itemvalue="JUnit.StudentRestControllerTest" />
+        <item itemvalue="JUnit.StudentRestControllerTest.updateStudentValidationFailedException" />
+        <item itemvalue="JUnit.StudentRestControllerTest.registerStudentValidationFailedException" />
       </list>
     </recent_temporary>
   </component>
@@ -240,7 +330,10 @@
       <workItem from="1704853960270" duration="165000" />
       <workItem from="1704854174414" duration="1167000" />
       <workItem from="1704859722038" duration="444000" />
-      <workItem from="1704865269723" duration="42757000" />
+      <workItem from="1704865269723" duration="42961000" />
+      <workItem from="1704955267370" duration="63000" />
+      <workItem from="1704955342017" duration="514000" />
+      <workItem from="1704955895089" duration="15840000" />
     </task>
     <task id="LOCAL-00001" summary="ki">
       <option name="closed" value="true" />
@@ -266,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704893680366</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat : 파일 추가">
+      <option name="closed" value="true" />
+      <created>1704955076519</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1704955076519</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,9 +414,26 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ki" />
     <MESSAGE value="feat : 파일 변경" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat : 파일 변경" />
+    <MESSAGE value="feat : 파일 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat : 파일 추가" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/springmvc2$Tomcat_9_0_832.ic" NAME="Tomcat 9.0.832 커버리지 결과" MODIFIED="1704785428477" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/springmvc2$springmvc_controller.ic" NAME="springmvc의 controller 커버리지 결과" MODIFIED="1704976664599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/springmvc2$StudentRestControllerTest_updateStudent.ic" NAME="StudentRestControllerTest.updateStudent 커버리지 결과" MODIFIED="1704976748134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.nhnacademy.springmvc.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/springmvc2$StudentRestControllerTest.ic" NAME="StudentRestControllerTest 커버리지 결과" MODIFIED="1704976478287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.nhnacademy.springmvc.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/springmvc2$StudentRestControllerTest_registerStudent.ic" NAME="StudentRestControllerTest.registerStudent 커버리지 결과" MODIFIED="1704964914721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.nhnacademy.springmvc.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/springmvc2$StudentRestControllerTest_getStudentNotFound.ic" NAME="StudentRestControllerTest.getStudentNotFound 커버리지 결과" MODIFIED="1704967035719" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.nhnacademy.springmvc.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/springmvc2$StudentRestControllerTest_updateStudentValidationFailedException.ic" NAME="StudentRestControllerTest.updateStudentValidationFailedException 커버리지 결과" MODIFIED="1704975747580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.nhnacademy.springmvc.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/springmvc2$Tomcat_9_0_832.ic" NAME="Tomcat 9.0.832 커버리지 결과" MODIFIED="1704956017232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

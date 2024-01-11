@@ -5,7 +5,7 @@ Content-Type: application/json
 {
   "name": "강건",
   "email": "test@example.com",
-  "score": 90,
+  "score": 901,
   "comment": "Test comment"
 }
 
