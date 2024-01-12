@@ -1,6 +1,7 @@
 package com.nhnacademy.springmvc.controller;
 
 import com.nhnacademy.springmvc.domain.Student;
+import com.nhnacademy.springmvc.domain.StudentModifyRequest;
 import com.nhnacademy.springmvc.domain.StudentRegisterRequest;
 import com.nhnacademy.springmvc.exception.StudentNotFoundException;
 import com.nhnacademy.springmvc.exception.ValidationFailedException;
@@ -38,9 +39,9 @@ public class StudentRestController {
         return student;}
     @PutMapping("/students/{studentId}")
     @ResponseStatus(HttpStatus.CREATED)
-    public Student updateStudent(@PathVariable long studentId, @Valid @RequestBody Student updatedStudent, BindingResult bindingResult) {
+    public Student updateStudent(@PathVariable long studentId, @Valid @RequestBody StudentModifyRequest modifyRequest, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             throw new ValidationFailedException(bindingResult);}
         if (!studentRepository.exists(studentId)) {
             throw new StudentNotFoundException();}
-        return studentRepository.modify(studentId, updatedStudent.getName(), updatedStudent.getEmail(), updatedStudent.getScore(), updatedStudent.getComment());}}
+        return studentRepository.modify(studentId, modifyRequest.getName(), modifyRequest.getEmail(), modifyRequest.getScore(), modifyRequest.getComment());}}

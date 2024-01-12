@@ -10,19 +10,97 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="05454e24-ed37-4d2c-a1ce-8daaa0f8b9ed" name="변경" comment="feat : 파일 추가">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/nhnacademy/springmvc/controller/StudentRestControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/springmvc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springmvc/config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springmvc/config/WebConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springmvc/controller/StudentRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springmvc/controller/StudentRestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springmvc/controller/WebControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/nhnacademy/springmvc/controller/WebControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/students.http" beforeDir="false" afterPath="$PROJECT_DIR$/students.http" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/config/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/StudentRestController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/StudentRestController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/WebControllerAdvice.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/WebControllerAdvice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/config/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/config/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/nhnacademy/springmvc/controller/StudentRestControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/nhnacademy/springmvc/controller/StudentRestControllerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/Base.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/FilterInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/WebAppInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/config/RootConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/ControllerBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/StudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/StudentRegisterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/StudentRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/controller/WebControllerAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/domain/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/domain/StudentModifyRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/domain/StudentRegisterRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/exception/StudentNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/exception/ValidationFailedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/interceptor/LoginCheckInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/repository/StudentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/repository/StudentRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/nhnacademy/springmvc/repository/UserRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/message.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/message_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/message_ko.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT.war" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/Base.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/FilterInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/WebAppInitializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/config/RootConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/config/WebConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/controller/ControllerBase.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/controller/HomeController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/controller/StudentController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/controller/StudentRegisterController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/controller/StudentRestController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/controller/WebControllerAdvice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/domain/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/domain/StudentModifyRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/domain/StudentRegisterRequest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/exception/StudentNotFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/exception/ValidationFailedException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/interceptor/LoginCheckInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/repository/StudentRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/repository/StudentRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/repository/UserRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/com/nhnacademy/springmvc/repository/UserRepositoryImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/message.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/message_en.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/classes/message_ko.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/attoparser-2.0.5.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.5.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/hibernate-validator-6.2.3.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/jackson-annotations-2.13.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/jackson-core-2.13.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/jackson-databind-2.13.2.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/jakarta.el-api-3.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/jakarta.servlet.jsp.jstl-1.2.6.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/jakarta.servlet.jsp.jstl-api-1.2.4.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/jakarta.validation-api-2.0.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.4.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/logback-classic-1.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/logback-core-1.2.11.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/lombok-1.18.24.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/slf4j-api-1.7.32.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-5.3.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-5.3.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/spring-context-5.3.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/spring-core-5.3.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-5.3.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/spring-jcl-5.3.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/spring-web-5.3.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-5.3.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/thymeleaf-3.0.13.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/thymeleaf-spring5-3.0.13.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/lib/unbescape-1.1.6.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/view/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/view/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/view/loginForm.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/view/studentModify.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/view/studentRegister.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/springmvc-1.0-SNAPSHOT/WEB-INF/view/studentView.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/nhnacademy/springmvc/controller/StudentRestControllerTest.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,30 +146,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/kang-geon/Desktop/springmvc2/src/main/java/com/nhnacademy/springmvc/repository",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "onboarding.tips.debug.path": "/Users/kang-geon/Desktop/springmvc2/src/main/java/com/nhnacademy/springmvc/Main.java",
-    "project.structure.last.edited": "모듈",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "File.Encoding",
-    "spring.configuration.checksum": "0861095ca1565183975151c5b2a14071",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/kang-geon/Desktop/springmvc2/src/main/java/com/nhnacademy/springmvc/repository&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;/Users/kang-geon/Desktop/springmvc2/src/main/java/com/nhnacademy/springmvc/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;모듈&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;0861095ca1565183975151c5b2a14071&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.nhnacademy.springmvc.model" />
@@ -122,7 +200,16 @@
       <recent name="com.nhnacademy.springmvc.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentRestControllerTest.updateStudent">
+  <component name="RunManager" selected="JUnit.StudentRestControllerTest">
+    <configuration name="students | Get Student Information ######" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/students.http" index="2" requestIdentifier="Get Student Information ######" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
+    <configuration name="students | Register a Student ######" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/students.http" requestIdentifier="Register a Student ######" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
+    <configuration name="students | Update Student Information ######" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/students.http" index="3" requestIdentifier="Update Student Information ######" runType="단일 요청 실행">
+      <method v="2" />
+    </configuration>
     <configuration name="StudentRestControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springmvc" />
       <extension name="coverage">
@@ -138,7 +225,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentRestControllerTest.registerStudentValidationFailedException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StudentRestControllerTest.updateStudentNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="springmvc" />
       <extension name="coverage">
         <pattern>
@@ -148,48 +235,8 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.nhnacademy.springmvc.controller" />
       <option name="MAIN_CLASS_NAME" value="com.nhnacademy.springmvc.controller.StudentRestControllerTest" />
-      <option name="METHOD_NAME" value="registerStudentValidationFailedException" />
+      <option name="METHOD_NAME" value="updateStudentNotFound" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentRestControllerTest.updateStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springmvc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nhnacademy.springmvc.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.nhnacademy.springmvc.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.nhnacademy.springmvc.controller.StudentRestControllerTest" />
-      <option name="METHOD_NAME" value="updateStudent" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentRestControllerTest.updateStudentValidationFailedException" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springmvc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nhnacademy.springmvc.controller.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.nhnacademy.springmvc.controller" />
-      <option name="MAIN_CLASS_NAME" value="com.nhnacademy.springmvc.controller.StudentRestControllerTest" />
-      <option name="METHOD_NAME" value="updateStudentValidationFailedException" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="springmvc의 controller" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="springmvc" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/src/test/java/com/nhnacademy/springmvc/controller" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -297,20 +344,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="HTTP 요청.students | Get Student Information ######" />
+      <item itemvalue="HTTP 요청.students | Register a Student ######" />
+      <item itemvalue="HTTP 요청.students | Update Student Information ######" />
+      <item itemvalue="JUnit.StudentRestControllerTest.updateStudentNotFound" />
       <item itemvalue="JUnit.StudentRestControllerTest" />
-      <item itemvalue="JUnit.StudentRestControllerTest.registerStudentValidationFailedException" />
-      <item itemvalue="JUnit.StudentRestControllerTest.updateStudent" />
-      <item itemvalue="JUnit.StudentRestControllerTest.updateStudentValidationFailedException" />
-      <item itemvalue="JUnit.springmvc의 controller" />
       <item itemvalue="Tomcat 서버.Tomcat 9.0.832" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StudentRestControllerTest.updateStudent" />
-        <item itemvalue="JUnit.springmvc의 controller" />
         <item itemvalue="JUnit.StudentRestControllerTest" />
-        <item itemvalue="JUnit.StudentRestControllerTest.updateStudentValidationFailedException" />
-        <item itemvalue="JUnit.StudentRestControllerTest.registerStudentValidationFailedException" />
+        <item itemvalue="HTTP 요청.students | Update Student Information ######" />
+        <item itemvalue="HTTP 요청.students | Register a Student ######" />
+        <item itemvalue="HTTP 요청.students | Get Student Information ######" />
+        <item itemvalue="JUnit.StudentRestControllerTest.updateStudentNotFound" />
       </list>
     </recent_temporary>
   </component>
@@ -334,6 +381,7 @@
       <workItem from="1704955267370" duration="63000" />
       <workItem from="1704955342017" duration="514000" />
       <workItem from="1704955895089" duration="15840000" />
+      <workItem from="1704976902132" duration="4423000" />
     </task>
     <task id="LOCAL-00001" summary="ki">
       <option name="closed" value="true" />
@@ -367,7 +415,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704955076519</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat : 파일 추가">
+      <option name="closed" value="true" />
+      <created>1704976928095</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704976928095</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -422,7 +478,7 @@
     <SUITE FILE_PATH="coverage/springmvc2$StudentRestControllerTest_updateStudent.ic" NAME="StudentRestControllerTest.updateStudent 커버리지 결과" MODIFIED="1704976748134" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.nhnacademy.springmvc.controller.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/springmvc2$StudentRestControllerTest.ic" NAME="StudentRestControllerTest 커버리지 결과" MODIFIED="1704976478287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/springmvc2$StudentRestControllerTest.ic" NAME="StudentRestControllerTest 커버리지 결과" MODIFIED="1704981221165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>com.nhnacademy.springmvc.controller.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/springmvc2$StudentRestControllerTest_registerStudent.ic" NAME="StudentRestControllerTest.registerStudent 커버리지 결과" MODIFIED="1704964914721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

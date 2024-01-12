@@ -46,7 +46,7 @@ class StudentRestControllerTest {
 
     @Test
     void registerStudent() throws Exception {
-        StudentRegisterRequest studentRegisterRequest = new StudentRegisterRequest("nae", "email@gmail.com", 100, "comment");
+        StudentRegisterRequest studentRegisterRequest = new StudentRegisterRequest("test", "email@gmail.com", 100, "comment");
         String json = objectMapper.writeValueAsString(studentRegisterRequest);
         when(studentRepository.register(anyString(),anyString(),anyInt(),anyString())).thenReturn(new Student("test", "email", 100, "comment"));
 
@@ -73,7 +73,7 @@ class StudentRestControllerTest {
     }
     @Test
     void updateStudent() throws Exception {
-        StudentModifyRequest studentModifyRequest = new StudentModifyRequest("nae", "email@gmail.com", 100, "comment");
+        StudentModifyRequest studentModifyRequest = new StudentModifyRequest("test", "email@gmail.com", 100, "comment");
         when(studentRepository.modify(anyLong(),anyString(),anyString(),anyInt(),anyString())).thenReturn(new Student("test", "email", 100, "comment"));
         when(studentRepository.exists(anyLong())).thenReturn(true);
         String json = objectMapper.writeValueAsString(studentModifyRequest);
@@ -88,7 +88,7 @@ class StudentRestControllerTest {
     }
     @Test
     void registerStudentValidationFailedException() throws Exception {
-        StudentRegisterRequest studentRegisterRequest = new StudentRegisterRequest("nae", "email", 901, "comment");
+        StudentRegisterRequest studentRegisterRequest = new StudentRegisterRequest("test", "email", 901, "comment");
         String json = objectMapper.writeValueAsString(studentRegisterRequest);
         when(studentRepository.register(anyString(),anyString(),anyInt(),anyString())).thenReturn(new Student("test", "email", 901, "comment"));
         Throwable th = catchThrowable(() ->
@@ -99,9 +99,28 @@ class StudentRestControllerTest {
     }
     @Test
     void updateStudentValidationFailedException() throws Exception {
-        StudentModifyRequest studentModifyRequest = new StudentModifyRequest("nae", "email", 901, "comment");
+        StudentModifyRequest studentModifyRequest = new StudentModifyRequest("", "email", 901, "comment");
         String json = objectMapper.writeValueAsString(studentModifyRequest);
-        when(studentRepository.modify(anyLong(),anyString(),anyString(),anyInt(),anyString())).thenReturn(new Student("test", "email", 901, "comment"));
+
+        when(studentRepository.exists(anyLong())).thenReturn(true);
+        when(studentRepository.modify(anyLong(),anyString(),anyString(),anyInt(),anyString())).thenReturn(new Student("", "email", 901, "comment"));
+
+        Throwable th = catchThrowable(() ->
+                mockMvc.perform(put("/students/1").
+                        contentType(MediaType.APPLICATION_JSON)
+                        .content(json))
+                        .andExpect(status().isBadRequest())
+                        .andReturn());
+
+        assertThat(th)
+                .isInstanceOf(NestedServletException.class)
+                .hasCauseInstanceOf(ValidationFailedException.class);
+    }
+    @Test
+    void updateStudentNotFound() throws Exception {
+        StudentModifyRequest studentModifyRequest = new StudentModifyRequest("test", "email@gmail.com", 90, "comment");
+        String json = objectMapper.writeValueAsString(studentModifyRequest);
+        when(studentRepository.modify(anyLong(),anyString(),anyString(),anyInt(),anyString())).thenReturn(new Student("test", "email@gmail.com", 90, "comment"));
         when(studentRepository.exists(anyLong())).thenReturn(false);
         Throwable th = catchThrowable(() ->
                 mockMvc.perform(put("/students/1").contentType(MediaType.APPLICATION_JSON).content(json)).andExpect(status().isBadRequest()).andReturn());

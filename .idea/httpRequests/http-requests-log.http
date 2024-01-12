@@ -1,3 +1,48 @@
+PUT http://localhost:8080/students/1
+Content-Type: application/json
+Content-Length: 103
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "강건",
+  "email": "updated@example.com",
+  "score": 95,
+  "comment": "Comment updated"
+}
+
+<> 2024-01-11T224814.201.json
+
+###
+
+POST http://localhost:8080/students
+Content-Type: application/json
+Content-Length: 98
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+{
+  "name": "강건",
+  "email": "test@example.com",
+  "score": 901,
+  "comment": "Test comment"
+}
+
+<> 2024-01-11T224811.200.html
+
+###
+
+GET http://localhost:8080/students/1
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2024-01-11T224807.200.json
+
+###
+
 POST http://localhost:8080/students
 Content-Type: application/json
 Content-Length: 98
