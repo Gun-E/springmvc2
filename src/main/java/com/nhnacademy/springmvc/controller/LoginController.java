@@ -1,5 +1,6 @@
 package com.nhnacademy.springmvc.controller;
 
+import com.nhnacademy.springmvc.domain.User;
 import com.nhnacademy.springmvc.repository.UserRepository;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
@@ -40,11 +41,12 @@ public class LoginController {
                           HttpServletRequest request,
                           HttpServletResponse response,
                           ModelMap modelMap) {
-        if (userRepository.matches(id, pwd)) {
+        if (userRepository.existsByIdAndPassword(id, pwd)) {
             HttpSession session = request.getSession(true);
 
             Cookie cookie = new Cookie("SESSION", session.getId());
             response.addCookie(cookie);
+
             session.setAttribute("id",session.getId());
             modelMap.put("id", session.getId());
             return "redirect:/index";

@@ -33,7 +33,7 @@ public class StudentRegisterController {
         if (bindingResult.hasErrors()) {
             throw new ValidationFailedException(bindingResult);
         }
-        Student student = studentRepository.register(registerRequest.getName(),registerRequest.getEmail(), registerRequest.getScore(), registerRequest.getComment());
+        Student student = studentRepository.save(new Student(registerRequest.getName(),registerRequest.getEmail(), registerRequest.getScore(), registerRequest.getComment()));
         ModelAndView mav = new ModelAndView("studentView");
         mav.addObject("student", student);
         return mav;

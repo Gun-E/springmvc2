@@ -48,7 +48,7 @@ class StudentRestControllerTest {
     void registerStudent() throws Exception {
         StudentRegisterRequest studentRegisterRequest = new StudentRegisterRequest("test", "email@gmail.com", 100, "comment");
         String json = objectMapper.writeValueAsString(studentRegisterRequest);
-        when(studentRepository.register(anyString(),anyString(),anyInt(),anyString())).thenReturn(new Student("test", "email", 100, "comment"));
+        when(studentRepository.save(any())).thenReturn(new Student("test", "email", 100, "comment"));
 
         mockMvc.perform(post("/students")
                         .contentType(MediaType.APPLICATION_JSON).content(json))
@@ -61,8 +61,8 @@ class StudentRestControllerTest {
 
     @Test
     void getStudent() throws Exception {
-        when(studentRepository.getStudent(1)).thenReturn(new Student("test", "email", 100, "comment"));
-        when(studentRepository.exists(anyLong())).thenReturn(true);
+        when(studentRepository.findById(1L)).thenReturn(java.util.Optional.of(new Student("test", "email", 100, "comment")));
+        when(studentRepository.existsById(anyLong())).thenReturn(true);
         mockMvc.perform(get("/students/1")
                         .accept(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
@@ -74,8 +74,8 @@ class StudentRestControllerTest {
     @Test
     void updateStudent() throws Exception {
         StudentModifyRequest studentModifyRequest = new StudentModifyRequest("test", "email@gmail.com", 100, "comment");
-        when(studentRepository.modify(anyLong(),anyString(),anyString(),anyInt(),anyString())).thenReturn(new Student("test", "email", 100, "comment"));
-        when(studentRepository.exists(anyLong())).thenReturn(true);
+        when(studentRepository.save(any())).thenReturn(new Student("test", "email", 100, "comment"));
+        when(studentRepository.existsById(anyLong())).thenReturn(true);
         String json = objectMapper.writeValueAsString(studentModifyRequest);
 
         mockMvc.perform(put("/students/1")
@@ -90,7 +90,7 @@ class StudentRestControllerTest {
     void registerStudentValidationFailedException() throws Exception {
         StudentRegisterRequest studentRegisterRequest = new StudentRegisterRequest("test", "email", 901, "comment");
         String json = objectMapper.writeValueAsString(studentRegisterRequest);
-        when(studentRepository.register(anyString(),anyString(),anyInt(),anyString())).thenReturn(new Student("test", "email", 901, "comment"));
+        when(studentRepository.save(any())).thenReturn(new Student("test", "email", 901, "comment"));
         Throwable th = catchThrowable(() ->
                 mockMvc.perform(post("/students").contentType(MediaType.APPLICATION_JSON).content(json)).andExpect(status().isBadRequest()).andReturn());
         assertThat(th)
@@ -102,8 +102,8 @@ class StudentRestControllerTest {
         StudentModifyRequest studentModifyRequest = new StudentModifyRequest("", "email", 901, "comment");
         String json = objectMapper.writeValueAsString(studentModifyRequest);
 
-        when(studentRepository.exists(anyLong())).thenReturn(true);
-        when(studentRepository.modify(anyLong(),anyString(),anyString(),anyInt(),anyString())).thenReturn(new Student("", "email", 901, "comment"));
+        when(studentRepository.existsById(anyLong())).thenReturn(true);
+        when(studentRepository.save(any())).thenReturn(new Student("", "email", 901, "comment"));
 
         Throwable th = catchThrowable(() ->
                 mockMvc.perform(put("/students/1").
@@ -120,8 +120,8 @@ class StudentRestControllerTest {
     void updateStudentNotFound() throws Exception {
         StudentModifyRequest studentModifyRequest = new StudentModifyRequest("test", "email@gmail.com", 90, "comment");
         String json = objectMapper.writeValueAsString(studentModifyRequest);
-        when(studentRepository.modify(anyLong(),anyString(),anyString(),anyInt(),anyString())).thenReturn(new Student("test", "email@gmail.com", 90, "comment"));
-        when(studentRepository.exists(anyLong())).thenReturn(false);
+        when(studentRepository.save(any())).thenReturn(new Student("test", "email@gmail.com", 90, "comment"));
+        when(studentRepository.existsById(anyLong())).thenReturn(false);
         Throwable th = catchThrowable(() ->
                 mockMvc.perform(put("/students/1").contentType(MediaType.APPLICATION_JSON).content(json)).andExpect(status().isBadRequest()).andReturn());
         assertThat(th)

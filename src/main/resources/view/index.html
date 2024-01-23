@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>학생 등록,수정</title>
+</head>
+<body>
+<a th:href="@{'/student/1'}"><h1>StudentView : 김학생</h1></a>
+<a th:href="@{'/student/register'}"><h1>StudentRegister</h1></a>
+<a th:href="@{'/student/1/modify'}"><h1>StudentModify : 김학생</h1></a>
+<a th:href="@{'/student/1?hideScore=yes'}"><h1>StudentHideScore : 김학생</h1></a>
+<br/>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="로그아웃"/>
+</form>
+</body>
+</html>

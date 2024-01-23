@@ -1,5 +1,6 @@
 package com.nhnacademy.springmvc.controller;
 
+import com.nhnacademy.springmvc.domain.Student;
 import com.nhnacademy.springmvc.domain.StudentModifyRequest;
 import com.nhnacademy.springmvc.exception.StudentNotFoundException;
 import com.nhnacademy.springmvc.exception.ValidationFailedException;
@@ -27,25 +28,25 @@ public class StudentController {
 
     @GetMapping("/{studentId}")
     public String viewStudent(@PathVariable long studentId, Model model) {
-        if (!studentRepository.exists(studentId)) {
+        if (!studentRepository.existsById(studentId)) {
             throw new StudentNotFoundException();
         }
-        model.addAttribute("student", studentRepository.getStudent(studentId));
+        model.addAttribute("student", studentRepository.findById(studentId).get());
         return "studentView";
     }
 
     @GetMapping("/{studentId}/modify")
     public String studentModifyForm(@PathVariable long studentId, Model model) {
-        if (!studentRepository.exists(studentId)) {
+        if (!studentRepository.existsById(studentId)) {
             throw new StudentNotFoundException();
         }
-        model.addAttribute("student", studentRepository.getStudent(studentId));
+        model.addAttribute("student", studentRepository.findById(studentId).get());
         return "studentModify";
     }
 
     @GetMapping(value = "/{studentId}", params = "hideScore")
     public String viewStudentHideScore(@PathVariable long studentId, @RequestParam(name = "hideScore", defaultValue = "no") String hideScore, ModelMap modelMap) {
-        modelMap.addAttribute("student", studentRepository.getStudent(studentId));
+        modelMap.addAttribute("student", studentRepository.findById(studentId).get());
         if ("yes".equals(hideScore)) {
             modelMap.addAttribute("hideScore",true);
         }
@@ -57,9 +58,9 @@ public class StudentController {
         if (bindingResult.hasErrors()) {
             throw new ValidationFailedException(bindingResult);
         }
-        studentRepository.modify(studentId, modifyRequest.getName(), modifyRequest.getEmail(), modifyRequest.getScore(), modifyRequest.getComment());
+        studentRepository.save(new Student(studentId, modifyRequest.getName(), modifyRequest.getEmail(), modifyRequest.getScore(), modifyRequest.getComment()));
         ModelAndView mav = new ModelAndView("studentView");
-        mav.addObject("student", studentRepository.getStudent(studentId));
+        mav.addObject("student", studentRepository.findById(studentId).get());
         return mav;
     }
     @ExceptionHandler(StudentNotFoundException.class)

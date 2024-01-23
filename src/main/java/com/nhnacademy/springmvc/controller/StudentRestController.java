@@ -10,6 +10,7 @@ import javax.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.validation.BindingResult;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -23,25 +24,25 @@ public class StudentRestController {
 
     @PostMapping("/students")
     @ResponseStatus(HttpStatus.CREATED)
-    public Student registerStudent(@Valid @RequestBody StudentRegisterRequest registerRequest, BindingResult bindingResult) {
+    public Student registerStudent(@Validated @RequestBody StudentRegisterRequest registerRequest, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             throw new ValidationFailedException(bindingResult);
         }
-        return studentRepository.register(registerRequest.getName(), registerRequest.getEmail(),
-                registerRequest.getScore(), registerRequest.getComment());
+        return studentRepository.save(new Student(registerRequest.getName(), registerRequest.getEmail(),
+                registerRequest.getScore(), registerRequest.getComment()));
     }
 
     @GetMapping("/students/{studentId}")
     public Student getStudent(@PathVariable long studentId) {
-        if (!studentRepository.exists(studentId)) {
+        if (!studentRepository.existsById(studentId)) {
             throw new StudentNotFoundException();}
-        Student student = studentRepository.getStudent(studentId);
+        Student student = studentRepository.findById(studentId).get();
         return student;}
     @PutMapping("/students/{studentId}")
     @ResponseStatus(HttpStatus.CREATED)
-    public Student updateStudent(@PathVariable long studentId, @Valid @RequestBody StudentModifyRequest modifyRequest, BindingResult bindingResult) {
+    public Student updateStudent(@PathVariable long studentId, @Validated @RequestBody StudentModifyRequest modifyRequest, BindingResult bindingResult) {
         if (bindingResult.hasErrors()) {
             throw new ValidationFailedException(bindingResult);}
-        if (!studentRepository.exists(studentId)) {
+        if (!studentRepository.existsById(studentId)) {
             throw new StudentNotFoundException();}
-        return studentRepository.modify(studentId, modifyRequest.getName(), modifyRequest.getEmail(), modifyRequest.getScore(), modifyRequest.getComment());}}
+        return studentRepository.save(new Student(studentId, modifyRequest.getName(), modifyRequest.getEmail(), modifyRequest.getScore(), modifyRequest.getComment()));}}
